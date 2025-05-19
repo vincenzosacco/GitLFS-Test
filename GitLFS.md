@@ -77,7 +77,9 @@ git lfs ls-files
 ## Note Aggiuntive
 - Tieni presente i [limiti di spazio e banda associati](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-storage-and-bandwidth-usage) a Git LFS su GitHub, e [monitora l'utilizzo del tuo spazio]([htt](https://docs.github.com/en/billing/managing-billing-for-your-products/managing-billing-for-git-large-file-storage/viewing-your-git-large-file-storage-usage)).
 - Anche chi clona la repo deve eseguire il [passo 1](#passo-1-installare-git-lfs)
+- Per clonare la repo utilizzare ```git fls clone```
 
+  
 <!--   -->
 # `git lfs migrate import` quali opzioni usare?
 Quando si migra un file già presente nel repository, è possibile usare il comando [`git lfs migrate import`](https://github.com/git-lfs/git-lfs/blob/main/docs/man/git-lfs-migrate.adoc#git-lfs-migrate1) per spostare i file già tracciati da Git su Git LFS. Questa operazione si può fare in due modi:
