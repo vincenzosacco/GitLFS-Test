@@ -62,9 +62,11 @@ git lfs ls-files
 
 ## Passo 5: Esegui il Push su GitHub
 - Infine, esegui il push delle modifiche sul repository GitHub:
-  ```
-  # Se ho usato --
-  git push 
+  ```shell
+  # Se non hai modificato la history al passo 2
+  git push
+  # Se hai modificato la history al passo 2
+  git push --force
   ```
 
 
