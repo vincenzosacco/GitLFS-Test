@@ -48,7 +48,11 @@ git lfs ls-files
 - Aggiungi il file al tuo repository con il comando:
     ``` shell
     git add nomefile.ext
+    
+    # Se hai usato <git lfs track> per tracciare file già presenti nella repo
+    git add --renormalize .
     ```
+    *`--renormalize` [motivo](https://github.com/git-lfs/git-lfs/blob/main/docs/man/git-lfs-faq.adoc#file-size)*
 
 ## Passo 4: Effettua il Commit delle Modifiche
 -  Esegui il commit delle modifiche con un messaggio descrittivo:
@@ -59,7 +63,8 @@ git lfs ls-files
 ## Passo 5: Esegui il Push su GitHub
 - Infine, esegui il push delle modifiche sul repository GitHub:
   ```
-  git push
+  # Se ho usato --
+  git push 
   ```
 
 
@@ -69,7 +74,7 @@ git lfs ls-files
 
 ## Note Aggiuntive
 - Tieni presente i [limiti di spazio e banda associati](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-storage-and-bandwidth-usage) a Git LFS su GitHub, e [monitora l'utilizzo del tuo spazio]([htt](https://docs.github.com/en/billing/managing-billing-for-your-products/managing-billing-for-git-large-file-storage/viewing-your-git-large-file-storage-usage)).
-
+- Anche chi clona la repo deve eseguire il [passo 1](#passo-1-installare-git-lfs)
 
 <!--   -->
 # `git lfs migrate import` quali opzioni usare?
@@ -78,6 +83,7 @@ Quando si migra un file già presente nel repository, è possibile usare il coma
   ```shell 
   # Attivo in tutti i branch
   git lfs migrate import --everything --include="*.ext"
+  ```
   
   *Vantaggi*: riduce la dimensione del repository e migliora le prestazioni.
   *Svantaggi*: modifica la cronologia, il che può essere problematico per i collaboratori.
