@@ -93,8 +93,6 @@ Quando si migra un file già presente nel repository, è possibile usare il coma
   --no-rewrite -m "Migrato file di grandi dimensioni su LFS"
   ```
 
-
-  
   *Vantaggi*: non modifica la cronologia, quindi è più comodo per i collaboratori.
   
   *Svantaggi*: le ottimizzazioni delle dimensioni saranno efficaci solo per i nuovi commit, non per quelli già esistenti.
