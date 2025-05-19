@@ -26,11 +26,7 @@ git lfs install
       git lfs track "*.ext"
       ```
 
-     - Se il file *è già presente in un commit*, bisogna migrare i file già tracciati in LFS. Puoi farlo con il comando:
-        ``` shell
-        git lfs migrate import --include="*.ext"
-        ```
-        Sostituisci `*.ext` con il nome del file o il pattern che desideri tracciare. 
+     - Se il file *è già presente in un commit*, bisogna [migrare](#git-lfs-migrate-import-quali-opzioni-usare) i large files già tracciati da Git su Git LFS. 
 
 3. I comandi precedenti creano un file *.gitattributes* nel tuo repository che indica a Git di usare LFS per il file specificato. Aggiungi questo file al working tree se non è già presente:
     ``` shell
@@ -67,3 +63,16 @@ git lfs ls-files
 
 ## Note Aggiuntive
 - Tieni presente i [limiti di spazio e banda associati](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-storage-and-bandwidth-usage) a Git LFS su GitHub, e [monitora l'utilizzo del tuo spazio]([htt](https://docs.github.com/en/billing/managing-billing-for-your-products/managing-billing-for-git-large-file-storage/viewing-your-git-large-file-storage-usage)).
+
+# `git lfs migrate import` quali opzioni usare?
+Quando si migra un file già presente nel repository, è possibile usare il comando `git lfs migrate import` per spostare i file già tracciati da Git su Git LFS. Questa operazione si può fare in due modi:
+- **Riscrivendo la cronologia dei commit**: questo metodo riscrive la cronologia del repository, il che significa che sarà necessario forzare il push (`git push --force`) e i collaboratori dovranno risincronizzare i loro repository locali.
+##
+
+
+
+
+- `--include`: specifica i file da includere nella migrazione.
+- `--exclude`: specifica i file da escludere dalla migrazione.
+- `--everything`: migra tutti i file nel repository, non solo quelli tracciati da LFS.
+- `--no-rewrite`: non riscrive la cronologia dei commit, utile se vuoi mantenere i commit originali.
