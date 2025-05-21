@@ -36,7 +36,7 @@ Questo metodo è utilizzato per 'migrare' la gestione dell'archiviazione di file
 
 
 ### 2.  Esegui il Push su GitHub
-Il comando `git lfs migrate import` ha già creato un commit con i file migrati su LFS, quindi ora basta eseguire il push delle modifiche sul repository GitHub:
+A questo punto il comando `git lfs migrate import` ha riscritto la cronologia commit con i file migrati su LFS, quindi ora basta eseguire il push delle modifiche sul repository GitHub:
   ```bash
   git push --force
   ```
