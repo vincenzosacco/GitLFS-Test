@@ -1,4 +1,4 @@
 *.mp4 filter=lfs diff=lfs merge=lfs -text
-726MB-2.avi filter=lfs diff=lfs merge=lfs -text
+726MB.avi filter=lfs diff=lfs merge=lfs -text
 726MB-3.avi !text !filter !merge !diff
 *.avi filter=lfs diff=lfs merge=lfs -text
