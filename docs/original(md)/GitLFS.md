@@ -9,24 +9,24 @@ Prima di tutto, assicurati che Git LFS sia installato sul tuo sistema. Puoi inst
 - Per Linux: `sudo apt install git-lfs` (Ubuntu/Debian) o simili per la tua distribuzione.
 
 Dopo l'installazione, inizializza Git LFS:
-``` shell
+```bash
 # Inizializza Git LFS a livello globale
 git lfs install
 ```
-``` shell
+```bash
 # Inizializza Git LFS solo per il repository corrente
 git lfs install --local
 ```
 
 ## 2. Tracciare File di Grandi Dimensioni
 A questo punto :
-- Se il file *non è ancora presente in un commit*, è possibile seguire sia le istruzioni [metodo 'track'](steps-track.md).
+- Se il file *non è ancora presente in un commit*, è possibile seguire sia le istruzioni [metodo 'track'](_steps-track.md).
   
 - Se il file *è già presente in un commit* , bisogna scegliere
-    - se si vuole **riscrivere la cronologia dei commit**, seguire [metodo 'migrate rewrite'](steps-rewrite.md).
-    - se **non si vuole riscrivere la cronologia dei commit**, seguire [metodo 'migrate no-rewrite'](steps-norewrite.md).
+    - se si vuole **riscrivere la cronologia dei commit**, seguire [metodo 'migrate rewrite'](_steps-rewrite.md).
+    - se **non si vuole riscrivere la cronologia dei commit**, seguire [metodo 'migrate no-rewrite'](_steps-norewrite.md).
   
-***NOTA*** - Se la tua intenzione è quella caricare su GitHub una repo che contiene già file più grandi di 100MB, allora devi necessariamente seguire il [metodo 'migrate rewrite'](steps-rewrite.md).
+***NOTA*** - Se la tua intenzione è quella caricare su GitHub una repo che contiene già file più grandi di 100MB, allora devi necessariamente seguire il [metodo 'migrate rewrite'](_steps-rewrite.md).
 
 
 ## Note Aggiuntive

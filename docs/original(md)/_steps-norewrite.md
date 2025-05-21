@@ -5,7 +5,7 @@ Questo metodo è utilizzato per 'migrare' la gestione dell'archiviazione di file
 ### 1. Traccia il File di Grandi Dimensioni
 1. Vai nella cartella del tuo repository tramite terminale.
 2. Per tracciare un file di grandi dimensioni 
-    ```shell
+    ```bash
     # Un file specifico
     git lfs migrate import --include="nomefile.ext" --no-rewrite
     
@@ -20,13 +20,13 @@ Questo metodo è utilizzato per 'migrare' la gestione dell'archiviazione di file
 
   I comandi precedenti creano o aggiornano il file *.gitattributes* e lo aggiungono al commit.
   *Per verificare quali file sono tracciati da LFS, puoi usare:*
-  ``` shell
+  ``` bash
   git lfs ls-files
-```
+  ```
 
 ### 2.  Esegui il Push su GitHub
 Il comando `git lfs migrate import` ha già creato un commit con i file migrati su LFS, quindi ora basta eseguire il push delle modifiche sul repository GitHub:
-  ```shell
+  ``` bash
   git push
   ```
 
