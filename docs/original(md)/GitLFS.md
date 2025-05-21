@@ -26,12 +26,12 @@ A questo punto :
     - se si vuole **riscrivere la cronologia dei commit**, seguire [metodo 'migrate rewrite'](_steps-rewrite.md).
     - se **non si vuole riscrivere la cronologia dei commit**, seguire [metodo 'migrate no-rewrite'](_steps-norewrite.md).
   
-***NOTA*** - Se la tua intenzione è quella caricare su GitHub una repo che contiene già file più grandi di 100MB, allora devi necessariamente seguire il [metodo 'migrate rewrite'](_steps-rewrite.md).
+***NOTA*** - Se la tua intenzione è quella caricare su GitHub una repo *che contiene già file più grandi di 100MB*, allora devi necessariamente seguire il [metodo 'migrate rewrite'](_steps-rewrite.md).
 
 
 ## Note Aggiuntive
 - Tieni presente i [limiti di spazio e banda associati](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-storage-and-bandwidth-usage) a Git LFS su GitHub, e [monitora l'utilizzo del tuo spazio](https://docs.github.com/en/billing/managing-billing-for-your-products/managing-billing-for-git-large-file-storage/viewing-your-git-large-file-storage-usage).
-- Anche chi clona la repo deve eseguire [Installare Git LFS](#1-installare-git-lfs)
+- Anche chi clona la repo deve [Installare Git LFS](#1-installare-git-lfs)
 - Per clonare la repo che utilizza GitLFS usare `git lfs clone`
 - Se la repo è già clonata da prima che fosse abilitato LFS, utilizzare  `git lfs pull`
 
