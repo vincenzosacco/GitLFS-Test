@@ -30,3 +30,10 @@ Il comando `git lfs migrate import` ha già creato un commit con i file migrati 
   git push
   ```
 
+## Troubleshooting
+
+### ERROR: Expected one or more files with --no-rewrite
+Si verifica quando si esegue il comando `git lfs migrate import` con l'opzione `--no-rewrite` e GitLFS non trova nei commit i file specificati da `--include`,`--exclude` o `--above`. 
+Assicurati che:
+- I file esistono nei commit
+- Il nome dei file specificati sono corretti. 
