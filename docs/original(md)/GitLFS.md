@@ -1,6 +1,6 @@
 # Come Caricare File di Grandi Dimensioni su GitHub Usando Git LFS
 
-### 1. Installare Git LFS
+## 1. Installare Git LFS
 
 Prima di tutto, assicurati che Git LFS sia installato sul tuo sistema. Puoi installarlo da [sito ufficiale](https://git-lfs.github.com/) o utilizzare un package manager.
 
@@ -18,7 +18,7 @@ git lfs install
 git lfs install --local
 ```
 
-### 2. Tracciare File di Grandi Dimensioni
+## 2. Tracciare File di Grandi Dimensioni
 A questo punto :
 - Se il file *non è ancora presente in un commit*, è possibile seguire sia le istruzioni [metodo 'track'](steps-track.md).
   
@@ -31,9 +31,9 @@ A questo punto :
 
 ## Note Aggiuntive
 - Tieni presente i [limiti di spazio e banda associati](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-storage-and-bandwidth-usage) a Git LFS su GitHub, e [monitora l'utilizzo del tuo spazio](https://docs.github.com/en/billing/managing-billing-for-your-products/managing-billing-for-git-large-file-storage/viewing-your-git-large-file-storage-usage).
-- Anche chi clona la repo deve eseguire [installare git lfs](#passo-1-installare-git-lfs)
-- Per clonare la repo che utilizza GitLFS usare ```git lfs clone```
-- Se la repo è già clonata da prima che fosse abilitato LFS, utilizzare  ```git lfs pull```
+- Anche chi clona la repo deve eseguire [Installare Git LFS](#1-installare-git-lfs)
+- Per clonare la repo che utilizza GitLFS usare `git lfs clone`
+- Se la repo è già clonata da prima che fosse abilitato LFS, utilizzare  `git lfs pull`
 
   
 <!-- TROUBLESHOOTING -->

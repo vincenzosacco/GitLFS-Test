@@ -2,7 +2,7 @@
 Questo metodo è utilizzato per 'tracciare' file di grandi dimensioni **senza riscrivere la cronologia dei commit**.
 
 ## *Vantaggi*
-  - non è necessario forzare il push (`git push --force`), quindi non causa 'fastidi' a chi ha già clonato il repository. E' bene sottolinereare in questo caso forzare il push non causerebbe problemi di integrità, come spiegato [qui](migrate.md#import).
+  - non è necessario forzare il push (`git push --force`), quindi non causa 'fastidi' a chi ha già clonato il repository. E' bene sottolineare che in questo caso forzare il push non causerebbe problemi di integrità, come spiegato [qui](migrate.md#import).
   
 ## *Svantaggi*
   - **non è utile se si vuole caricare una repo su GitHub che contiene già file più grandi di 100MB** (limite imposto). Per fare questo, seguire il [metodo 'migrate rewrite'](steps-rewrite.md).
