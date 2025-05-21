@@ -7,7 +7,7 @@ Questo metodo è utilizzato per 'migrare' la gestione dell'archiviazione di file
 
 ## ***Svantaggi***
 - **Genera errori** se il file non è presente nei commit della remote ( dovuto a `--no-rewrite`).
-- Non rimuove i file di grandi dimensioni dalla cronologia dei commit, quindi il repository rimarrà grande.
+- Non migra i file di grandi dimensioni dai commit precedenti, quindi l'ottimizzazione non è la stessa di [migrate 'rewrite'](#_steps_rewrite) 
  
 
 ### 1. Traccia il File di Grandi Dimensioni
