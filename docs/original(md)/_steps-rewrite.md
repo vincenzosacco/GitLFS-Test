@@ -7,7 +7,7 @@ Questo metodo è utilizzato per 'migrare' la gestione dell'archiviazione di file
   - Ottimizzazione dello spazio: i file di grandi dimensioni vengono spostati in Git LFS, riducendo la dimensione del repository.
   
 ## *Svantaggi*
-  - Bisogna forzare il push (`git push --force`), quindi potrebbe causare problemi a chi ha già clonato il repository. 
+  - Bisogna forzare il push (`git push --force`), quindi potrebbe causare problemi a chi ha già clonato il repository. [*Info*](_migrate.md#import)
 
 ### 1. Traccia e Migra il File di Grandi Dimensioni
 1. Vai nella cartella del tuo repository tramite terminale.
