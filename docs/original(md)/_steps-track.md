@@ -26,6 +26,10 @@ Questo metodo è utilizzato per 'tracciare' file di grandi dimensioni **senza ri
       ```
 
 *Per verificare quali file sono tracciati da LFS, puoi usare il comando:*
+  ```bash
+  git lfs ls-files
+  ```
+
 
 
 
